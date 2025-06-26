@@ -9,7 +9,7 @@ CORS(app)  # Allow frontend requests
 # 🔹 MySQL Database Configuration
 app.config['MYSQL_HOST'] = 'localhost'  # Change if using remote DB
 app.config['MYSQL_USER'] = 'root'  # Replace with your MySQL username
-app.config['MYSQL_PASSWORD'] = 'Thanisha@20'  # Replace with your MySQL password
+app.config['MYSQL_PASSWORD'] = 'abcd'  # Replace with your MySQL password
 app.config['MYSQL_DB'] = 'sign_language_app'
 
 mysql = MySQL(app)
