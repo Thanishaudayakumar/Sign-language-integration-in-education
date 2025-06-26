@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up | Sign Language Learning App</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #D3A6FF, #FFFFFF);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      height: 650px;
+      display: flex;
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .image-section {
+      flex: 1;
+      background: url('https://i.ibb.co/G3BQfpN/Leonardo-Phoenix-Heres-the-prompt-for-creating-the-3-D-animesty-0.jpg') center/cover no-repeat;
+    }
+
+    .form-section {
+      flex: 1;
+      padding: 40px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #f8f8f8;
+    }
+
+    .form-section img.logo {
+      width: 120px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .form-section h1 {
+      font-size: 28px;
+      color: #D3A6FF;
+      margin-bottom: 20px;
+    }
+
+    .signup-form {
+      width: 100%;
+      max-width: 300px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 6px;
+      color: #555;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    button[type="submit"] {
+      padding: 10px;
+      background-color: #D3A6FF;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #b685e6;
+    }
+
+    .note {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .note a {
+      color: #D3A6FF;
+      text-decoration: none;
+    }
+
+    .note a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        height: auto;
+      }
+
+      .image-section {
+        height: 200px;
+      }
+
+      .form-section {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="image-section"></div>
+    <div class="form-section">
+      <img src="https://i.ibb.co/wr3hZgj/image.png" alt="Logo" class="logo">
+
+      <h1>Create an Account</h1>
+
+      <form id="signupForm" class="signup-form">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Enter your full name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Choose a username" required />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Create a password" required />
+        </div>
+
+        <button type="submit">Sign Up</button>
+      </form>
+
+      <p class="note">Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+  </div>
+
+  <script src="signup.js"></script>
+</body>
+</html>
